@@ -12,7 +12,7 @@ export default function Hero() {
         sizes="(max-width: 1024px) 100vw, (max-width: 1536px) 70vw, 90vw"
       />
 
-      <div className="mr-12 mt-7 space-y-5 text-center lg:mt-auto">
+      <div className="mr-12 mt-7 space-y-5 text-center tracking-wide lg:mt-auto">
         <h2 className="text-3xl font-semibold">
           Explore, Discover, Delight: Your Crystal Mall Adventure Starts Now!
         </h2>
