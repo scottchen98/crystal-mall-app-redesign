@@ -1,8 +1,8 @@
 "use client";
-import { DropdownMenu } from "@/components/dropdown-menu";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
+import { SheetMenu } from "./sheet-menu";
 
 const links = [
   { href: "/stores", label: "Stores" },
@@ -33,7 +33,7 @@ export default function NavBar() {
           </nav>
         </div>
         <div className="lg:hidden">
-          <DropdownMenu />
+          <SheetMenu />
         </div>
       </header>
     </div>
