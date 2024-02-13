@@ -23,7 +23,7 @@ export function SheetMenu() {
       </SheetTrigger>
       <SheetContent>
         <SheetHeader className="mb-4">
-          <SheetTitle>Crystal Mall</SheetTitle>
+          <SheetTitle className="text-left">Crystal Mall</SheetTitle>
         </SheetHeader>
         <Separator />
         <div className="my-7 flex flex-col gap-6">
