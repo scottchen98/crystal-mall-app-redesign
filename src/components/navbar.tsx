@@ -7,9 +7,9 @@ import { SheetMenu } from "./sheet-menu";
 const links = [
   { href: "/stores", label: "Stores" },
   { href: "/events", label: "Events" },
-  { href: "/about-us", label: "About Us" },
   { href: "/visit", label: "Visit" },
   { href: "/offers", label: "Offers" },
+  { href: "/about-us", label: "About Us" },
 ];
 
 export default function NavBar() {
