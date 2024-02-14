@@ -13,7 +13,7 @@ export default function Hero() {
       />
 
       <div className="mr-12 mt-7 space-y-5 text-center tracking-wide lg:mt-auto">
-        <h2 className="text-3xl font-semibold">
+        <h2 className="text-3xl font-semibold md:text-4xl">
           Explore, Discover, Delight: Your Crystal Mall Adventure Starts Now!
         </h2>
         <p className="text-sm font-light">
