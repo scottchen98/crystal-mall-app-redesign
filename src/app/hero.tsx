@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="mx-auto flex max-w-7xl flex-col p-4 lg:flex-row-reverse">
+    <div className="mx-auto mb-20 flex max-w-7xl flex-col p-4 lg:flex-row-reverse">
       <Image
         src={"/images/crystal-mall-main.jpeg"}
         alt="Crystal Mall front entrance"
