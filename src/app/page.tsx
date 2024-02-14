@@ -1,5 +1,5 @@
 import Hero from "./hero";
-import StoreSection from "./store-section";
+import StoreSection from "./stores-section";
 
 export default function Home() {
   return (
