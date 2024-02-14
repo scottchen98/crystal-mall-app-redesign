@@ -30,7 +30,7 @@ export default function StoresSection() {
       </p>
       <div className="flex justify-between">
         <h2 className="mb-10 text-3xl font-semibold tracking-wide md:text-4xl">
-          Explore stores and restaurants at Crystal Mall.
+          Embark on a shopping and dining adventure at Crystal Mall.
         </h2>
         <Link
           href="/stores"
