@@ -22,7 +22,7 @@ const storeNames = [
   "Fido",
 ];
 
-export default function StoreSection() {
+export default function StoresSection() {
   return (
     <div className="mt-8 bg-secondary px-4 py-9 md:py-16">
       <p className="mb-1 text-xs font-medium tracking-widest">

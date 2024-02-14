@@ -1,11 +1,13 @@
+import EventsSection from "./events-section";
 import Hero from "./hero";
-import StoreSection from "./stores-section";
+import StoresSection from "./stores-section";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <StoreSection />
+      <StoresSection />
+      <EventsSection />
     </main>
   );
 }
