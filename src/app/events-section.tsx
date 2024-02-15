@@ -101,7 +101,7 @@ export default function EventsSection() {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
-      <div className="py-2 text-center text-sm text-muted-foreground">
+      <div className="py-2 text-center text-sm text-muted-foreground md:hidden">
         Slide {current} of {count}
       </div>
 
