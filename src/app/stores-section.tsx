@@ -45,7 +45,7 @@ export default function StoresSection() {
         ))}
       </StoreIcons>
       <Button className="mt-10 w-full rounded-full py-6 text-base font-medium tracking-wider md:hidden">
-        View all stores & Dining
+        View all Stores & Dining
       </Button>
     </div>
   );
