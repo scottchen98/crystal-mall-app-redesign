@@ -62,10 +62,34 @@ export default function EventsSection() {
         </h2>
         <Link
           href="/stores"
-          className="hidden font-semibold text-primary md:mr-8 md:block"
+          className="hidden text-right font-semibold text-primary md:block md:min-w-52"
         >
           View all News & Events
         </Link>
+      </div>
+
+      <div className="hidden md:grid md:grid-cols-2 md:gap-10">
+        {newsAndEvents.map((item, index) => (
+          <div key={index}>
+            <Image
+              className="mb-auto"
+              src={item.image}
+              alt={item.alt}
+              objectFit="cover"
+              width={615}
+              height={400}
+            />
+            <div className="mb-2 mt-5 flex items-center space-x-2 font-semibold tracking-widest md:text-xs">
+              <p className="border-r-[1px] border-[#374151] pr-2">
+                {item.type}
+              </p>
+              <p>{item.date}</p>
+            </div>
+            <div className="line-clamp-2 text-2xl font-semibold tracking-wide">
+              {item.title}
+            </div>
+          </div>
+        ))}
       </div>
 
       <Carousel setApi={setApi} className="mx-auto w-full max-w-sm md:hidden">
@@ -104,7 +128,6 @@ export default function EventsSection() {
       <div className="py-2 text-center text-sm text-muted-foreground md:hidden">
         Slide {current} of {count}
       </div>
-
       <Button
         variant="outline"
         className="mt-10 w-full rounded-full border-primary py-6 text-base font-medium tracking-wider text-primary hover:border-input md:hidden"
