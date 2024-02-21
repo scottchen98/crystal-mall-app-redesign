@@ -34,7 +34,7 @@ export default function StoresSection() {
         </h2>
         <Link
           href="/stores"
-          className="hidden font-semibold text-primary md:mr-8 md:block"
+          className="hidden text-right font-semibold text-primary md:block md:min-w-52"
         >
           View all Stores & Dining
         </Link>
