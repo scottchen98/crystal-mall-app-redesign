@@ -1,5 +1,6 @@
 import EventsSection from "./events-section";
 import Hero from "./hero";
+import OffersSection from "./offers-section";
 import StoresSection from "./stores-section";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <StoresSection />
       <EventsSection />
+      <OffersSection />
     </main>
   );
 }
