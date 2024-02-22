@@ -8,7 +8,6 @@ export default function Hero() {
         alt="Crystal Mall front entrance"
         width={800}
         height={500}
-        layout="responsive"
         sizes="(max-width: 1024px) 100vw, (max-width: 1536px) 70vw, 90vw"
       />
 

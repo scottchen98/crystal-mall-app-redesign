@@ -72,7 +72,6 @@ export default function OffersSection() {
               className="mb-auto"
               src={item.image}
               alt={item.alt}
-              objectFit="cover"
               width={615}
               height={400}
             />
@@ -100,7 +99,6 @@ export default function OffersSection() {
                       className="mb-auto"
                       src={item.image}
                       alt={item.alt}
-                      objectFit="cover"
                       width={400}
                       height={400}
                     />
