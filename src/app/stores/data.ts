@@ -20,7 +20,7 @@ export const categories = [
   "Food Court",
 ];
 
-export const storesByCategories = [
+export const stores = [
   "AJ Hair Salon",
   "Alana Cosmetics",
   "Cally Cosmetics",
