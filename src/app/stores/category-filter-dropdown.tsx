@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 
+import { categories } from "./data";
+
 export default function CategoryFilterDropdown() {
   return (
     <Accordion
@@ -21,24 +23,17 @@ export default function CategoryFilterDropdown() {
         </AccordionTrigger>
         <AccordionContent>
           <div className="flex flex-col gap-3">
-            <div>
-              <Checkbox id="terms" className="relative top-[2px] mr-2" />
-              <Label
-                htmlFor="terms"
-                className="text-sm font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-              >
-                Beauty & Hair Care
-              </Label>
-            </div>
-            <div>
-              <Checkbox id="terms" className="relative top-[2px] mr-2" />
-              <Label
-                htmlFor="terms"
-                className="text-sm font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-              >
-                Beauty & Hair Care
-              </Label>
-            </div>
+            {categories.map((category, index) => (
+              <div key={index}>
+                <Checkbox id="terms" className="relative top-[2px] mr-2" />
+                <Label
+                  htmlFor="terms"
+                  className="text-sm font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                >
+                  {category}
+                </Label>
+              </div>
+            ))}
           </div>
           <div className="mt-5 flex gap-4">
             <Button variant="outline" className="h-11 w-full rounded-full">
