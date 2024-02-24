@@ -11,6 +11,8 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 
+import { categories } from "./data";
+
 export default function CategoryFilterDialog() {
   return (
     <Dialog>
@@ -30,24 +32,20 @@ export default function CategoryFilterDialog() {
               </AccordionTrigger>
               <AccordionContent>
                 <div className="flex flex-col gap-3">
-                  <div>
-                    <Checkbox id="terms" className="relative top-[2px] mr-2" />
-                    <Label
-                      htmlFor="terms"
-                      className="text-xs font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 md:text-sm"
-                    >
-                      Beauty & Hair Care
-                    </Label>
-                  </div>
-                  <div>
-                    <Checkbox id="terms" className="relative top-[2px] mr-2" />
-                    <Label
-                      htmlFor="terms"
-                      className="text-xs font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 md:text-sm"
-                    >
-                      Beauty & Hair Care
-                    </Label>
-                  </div>
+                  {categories.map((category, index) => (
+                    <div key={index}>
+                      <Checkbox
+                        id="terms"
+                        className="relative top-[2px] mr-2"
+                      />
+                      <Label
+                        htmlFor="terms"
+                        className="text-sm font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      >
+                        {category}
+                      </Label>
+                    </div>
+                  ))}
                 </div>
               </AccordionContent>
             </AccordionItem>
