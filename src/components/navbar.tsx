@@ -17,9 +17,11 @@ export default function NavBar() {
   return (
     <div className="border-b-2">
       <header className="mx-auto flex max-w-7xl items-center justify-between p-8">
-        <h1 className="min-w-0 text-4xl font-bold text-primary">
-          Crystal Mall
-        </h1>
+        <Link href="/">
+          <h1 className="min-w-0 text-4xl font-bold text-primary">
+            Crystal Mall
+          </h1>
+        </Link>
         <div className="hidden lg:block">
           <nav className="flex items-center justify-center gap-2">
             {links.map((link) => (
